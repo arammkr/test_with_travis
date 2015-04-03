@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Factory as Faker;
+use Illuminate\Support\Facades\Session;
 
 class ApiTester extends TestCase
 {
@@ -16,7 +17,7 @@ class ApiTester extends TestCase
     public function setUp()
     {
         parent::setUp();
-        \Illuminate\Support\Facades\Session::start();
+        Session::start();
     }
 
 
@@ -53,3 +54,4 @@ class ApiTester extends TestCase
         return $this;
     }
 }
+
