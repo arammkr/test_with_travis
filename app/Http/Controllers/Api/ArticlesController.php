@@ -37,7 +37,9 @@ class ArticlesController extends BaseController
 	{
         $this->mustLogin();
 
-        $article = new Article($request->getValidatedData());
+        $data = $request->getValidatedData();
+        $data['show_status'] = '1';
+        $article = new Article($data);
         $article->user_id = Auth::user()->id;
         $article->save();
 

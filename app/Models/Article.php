@@ -8,7 +8,7 @@ class Article extends BaseModel
 {
 	protected $table = 'article';
 
-	protected $fillable = ['title', 'body'];
+	protected $fillable = ['title', 'body', 'show_status'];
 
 	protected $hidden = ['created_at', 'updated_at'];
 
