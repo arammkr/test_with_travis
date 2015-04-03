@@ -2380,12 +2380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/martiros/uis-core.git",
-                "reference": "a1a9b572f52b3977c066e7ed8ba453589743d2cc"
+                "reference": "a496912fcaa9e2dfa18fe71662b622b2e1f32e7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/martiros/uis-core/zipball/a1a9b572f52b3977c066e7ed8ba453589743d2cc",
-                "reference": "a1a9b572f52b3977c066e7ed8ba453589743d2cc",
+                "url": "https://api.github.com/repos/martiros/uis-core/zipball/a496912fcaa9e2dfa18fe71662b622b2e1f32e7f",
+                "reference": "a496912fcaa9e2dfa18fe71662b622b2e1f32e7f",
                 "shasum": ""
             },
             "require": {
