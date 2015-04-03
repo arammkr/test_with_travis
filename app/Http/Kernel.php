@@ -1,5 +1,5 @@
 <?php namespace App\Http;
-
+// just test
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel {
