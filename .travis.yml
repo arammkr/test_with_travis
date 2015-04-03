@@ -1,0 +1,21 @@
+language: php
+
+php:
+  - "5.5"
+
+services:
+  - mysql
+
+# Commands to be run before your environment runs.
+before_script:
+  - composer self-update
+  - composer install --no-interaction --prefer-source --dev
+  - chmod 777 vendor
+  - chmod 777 storage
+  - cp .env.travis .env
+
+  # db setup
+  - mysql -e 'create database test_with_travis;'
+  - php artisan migrate:refresh --seed
+
+script: vendor/bin/phpunit
