@@ -1,6 +1,9 @@
 <?php
-namespace App\Exceptions;
+
+namespace app\Exceptions;
 
 use UIS\Core\Exceptions\Handler as ExceptionHandler;
 
-class Handler extends ExceptionHandler {}
+class Handler extends ExceptionHandler
+{
+}

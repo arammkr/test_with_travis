@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Seeder;
-use Faker\Factory as Faker;
 use App\Models\Article;
-use App\Models\User;
 use App\Models\Author;
+use App\Models\User;
+use Faker\Factory as Faker;
+use Illuminate\Database\Seeder;
 
 class ArticleTableSeeder extends Seeder
 {
@@ -34,13 +34,12 @@ class ArticleTableSeeder extends Seeder
         $articlesData = [];
         for ($i = 0; $i < 100; $i++) {
             $articlesData[] = [
-                'title' => $this->faker->sentence(rand(3, 6)),
-                'body' => $this->faker->paragraph(rand(3, 6)),
-                'user_id' => $users->random()->id,
-                'author_id' => $authors->random()->id
+                'title'     => $this->faker->sentence(rand(3, 6)),
+                'body'      => $this->faker->paragraph(rand(3, 6)),
+                'user_id'   => $users->random()->id,
+                'author_id' => $authors->random()->id,
             ];
         }
         Article::insert($articlesData);
     }
-
 }

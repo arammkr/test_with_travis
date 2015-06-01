@@ -1,17 +1,17 @@
 <?php
 
-use UIS\Core\DB\Schema\Blueprint;
 use UIS\Core\DB\Migrations\Migration;
+use UIS\Core\DB\Schema\Blueprint;
 
-class CreateUserTable extends Migration {
-
-	/**
-	 * Run the migrations.
-	 *
-	 * @return void
-	 */
-	public function up()
-	{
+class CreateUserTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
         $this->getSchemaBuilder()->create(
             'user',
             function (Blueprint $table) {
@@ -22,16 +22,15 @@ class CreateUserTable extends Migration {
                 $table->timestamps();
             }
         );
-	}
+    }
 
-	/**
-	 * Reverse the migrations.
-	 *
-	 * @return void
-	 */
-	public function down()
-	{
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
         $this->getSchemaBuilder()->drop('user');
-	}
-
+    }
 }

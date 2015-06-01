@@ -1,5 +1,6 @@
 <?php
-namespace App\Models;
+
+namespace app\Models;
 
 use UIS\Core\Models\BaseModel;
 

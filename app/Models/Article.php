@@ -1,16 +1,16 @@
 <?php
-namespace App\Models;
+
+namespace app\Models;
 
 use UIS\Core\Models\BaseModel;
-use App\Models\Author;
 
 class Article extends BaseModel
 {
-	protected $table = 'article';
+    protected $table = 'article';
 
-	protected $fillable = ['title', 'body', 'show_status'];
+    protected $fillable = ['title', 'body', 'show_status'];
 
-	protected $hidden = ['created_at', 'updated_at'];
+    protected $hidden = ['created_at', 'updated_at'];
 
     public function author()
     {
