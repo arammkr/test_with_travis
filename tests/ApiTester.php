@@ -20,10 +20,10 @@ class ApiTester extends TestCase
         Session::start();
     }
 
-
     protected function getJson($uri, $method = 'GET', $params = [])
     {
         $this->responseObject = json_decode($this->call($method, $uri, $params)->getContent(), true);
+
         return $this->responseObject;
     }
 
@@ -45,13 +45,14 @@ class ApiTester extends TestCase
     public function token()
     {
         $this->startSession();
+
         return csrf_token();
     }
 
     public function login()
     {
         $this->be($this->getUserForAuth());
+
         return $this;
     }
 }
-

@@ -1,5 +1,6 @@
 <?php
-namespace Tests\TestData;
+
+namespace tests\TestData;
 
 use App\Models\Author;
 
@@ -12,6 +13,7 @@ class AuthorTestData
         if (self::$authors === null) {
             self::$authors = Author::all();
         }
+
         return self::$authors;
     }
 
