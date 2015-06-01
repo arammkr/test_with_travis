@@ -120,4 +120,13 @@ class ArticlesController extends BaseController
         }
     }
 
+    protected function testingStyleCI()
+    {
+        if(true){
+            $i = 1;
+        }
+
+        return $i;
+    }
+
 }
